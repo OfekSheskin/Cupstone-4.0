@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page cupstone 4.0</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+<%- include("partials/header.ejs") %>
+<div class="flex-container">
+    <div class="main-content">
+        <section class="user-input">
+            <h1>Do You Need Sunscreen Today?</h1>
+            <form action="/result" method="POST">
+                <div class="location-section">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location-lat" name="llat" placeholder="Enter location lat" required>
+                    <input type="text" id="location-lng" name="llng" placeholder="Enter location lng" required>
+
+                </div>
+    
+                <div class="skin-tone-section">
+                    <label for="skinTone">Skin Tone:</label>
+                    <div  id="skinToneIcon" class="skin-tone-icon" style="background-color: #b9834a; height: 2rem; width: 2rem; border-radius: 50%;"></div>
+                    <input type="range" id="skinToneSlider" name="skinTone" min="1" max="6" step="1" oninput="updateSkinToneIcon()">
+                </div>
+    
+                <button type="submit" class="submit-button">Check Sunscreen Need</button>
+            </form>
+        </section>
+    </div>
+
+
+</div>
+<%- include("partials/footer.ejs") %>
+    
+    
+    
+    
+    
+<script>
+    // Define skin tone colors for each value
+    const skinToneColors = {
+        1: '#f5d6c6', // Lightest skin tone
+        2: '#eac0a2',
+        3: '#d19f72',
+        4: '#b9834a',
+        5: '#8a6236',
+        6: '#5b3d21'  // Darkest skin tone
+    };
+
+    // Function to update the skin tone icon based on slider value
+    function updateSkinToneIcon() {
+        const slider = document.getElementById('skinToneSlider');
+        const icon = document.getElementById('skinToneIcon');
+        const skinTone = slider.value;
+
+        // Set the icon's background color according to the slider's value
+        icon.style.backgroundColor = skinToneColors[skinTone];
+    }
+
+
+</script>
+</body>
+</html>

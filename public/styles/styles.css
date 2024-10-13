@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    text-decoration: none;
+ }
+ *{text-decoration: none;}
+ .flex-container{display: flex; height: 100%; flex-direction: row; justify-content: center;}
+
+ 
+ .header {
+    background-color: #4db6ac;
+    color: white;
+    width: 100%;
+    height: 6rem  ;
+    display: block;
+    text-align: center;
+ }
+ 
+.inner-header{
+   width: 60%;
+   height: 100%;
+   display: block;
+   margin: 0 auto;
+}
+.logo-container{
+   height: 100%;
+   display: table;
+   float: left;
+
+}
+.navigation{
+   float: right;
+   height: 100%;
+   margin: 0;
+}
+.logo-container span{
+   font-weight: bold ;
+}
+.logo-container h1{
+   color: white;
+   height: 100%;
+   display: table-cell;
+   vertical-align: middle;
+font-family: "Montserrat";
+font-size: 2rem;
+}
+.logo-container h1 span{
+   font-weight: 800;
+
+}
+.navigation a{
+   height: 100%;
+   display: table;
+   float: left;
+   padding: 0rem 1.25rem;
+}
+.navigation a li{
+   display: table-cell;
+   vertical-align: middle;
+   height: 100%;
+   color: white;
+   font-family: "Montserrat";
+   font-size: 1rem;
+   
+}
+
+.navigation a:hover{
+   box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.24),0 1.063rem 3.125rem 0 rgba(0,0,0,0.19);
+   opacity: 200%;
+ }
+ .main-content{
+   display: inline-block;
+   height: 60rem;
+   
+
+ }
+ .footer {
+   background-color: #eeeeee;
+   padding: 1rem;
+   text-align: center;
+   font-size: 0.9rem;
+
+
+}
+.footer-container{
+   align-self: flex-end;
+   width: 100%;
+   position: absolute;
+   bottom: 0rem;
+   left: 0rem  ;
+}
+.user-input h1{
+   font-weight: 800;
+}
+.user-input {
+   margin-top: 3rem;
+   background: white;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   display: inline-block;
+}
+.user-input label {
+   display: block;
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+}
+.submit-button {
+   background-color: #ffcc80;
+   color: white;
+   border: none;
+   padding: 0.75rem 1.5rem;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.result-section {
+   margin-top: 2rem;
+}
+
+
+
+
+
+ 
+ 
+
+ 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <%if(locals.content){%>
+        <%- include("partials/header.ejs") %>
+
+    
+    <div class="flex-container">
+        <div class="main-content">
+            <section class="user-input">
+                <h1><%= content %></h1>
+
+            </section>
+        </div>
+    
+
+
+    <%- include("partials/footer.ejs") %>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <% }else{ %>
+     <div class="container">
+        <div class="error-message">
+            <h1>404</h1>
+            <p>Oops! The page you're looking for doesn't exist.</p>
+            <a href="/" class="home-link">Take Me Home</a>
+        </div>
+        <div class="illustration">
+            <img src="https://lh6.googleusercontent.com/Bu-pRqU_tWZV7O3rJ5nV1P6NjqFnnAs8kVLC5VGz_Kf7ws0nDUXoGTc7pP87tyUCfu8VyXi0YviIm7CxAISDr2lJSwWwXQxxz98qxVfMcKTJfLPqbcfhn-QEeOowjrlwX1LYDFJN" alt="404 Illustration" />
+        </div>
+
+
+<% } %>
+    
+</body>
+</html>
